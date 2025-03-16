@@ -6,6 +6,6 @@ export function theCat() {
     return 'cat';
 }
 
-await Deno.readFile('somestuff.txt');
+// await Deno.readFile('somestuff.txt');
 
-console.log(Deno.env.get('KILLCODE'))
+// console.log(Deno.env.get('KILLCODE'))
