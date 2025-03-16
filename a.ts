@@ -1,9 +1,9 @@
 export function theDog() {
-    return 'dog';
+  return "dog";
 }
 
 export function theCat() {
-    return 'cat';
+  return "cat";
 }
 
 // await Deno.readFile('somestuff.txt');

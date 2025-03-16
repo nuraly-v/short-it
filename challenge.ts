@@ -1,5 +1,5 @@
-import { invertBy } from "jsr:@std/collections"
+import { invertBy } from "jsr:@std/collections";
 
-const record = {a: 'x', b: 'y', c: 'z'};
+const record = { a: "x", b: "y", c: "z" };
 
-console.log(invertBy(record, key => key))
+console.log(invertBy(record, (key) => key));
