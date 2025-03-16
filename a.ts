@@ -5,3 +5,7 @@ export function theDog() {
 export function theCat() {
     return 'cat';
 }
+
+await Deno.readFile('somestuff.txt');
+
+console.log(Deno.env.get('KILLCODE'))

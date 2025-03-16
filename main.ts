@@ -10,3 +10,11 @@ if (import.meta.main) {
   console.log(helloWorld())
   console.log(derte)
 }
+
+
+
+let i = 0;
+
+setInterval(() => {
+  console.log(i++);
+}, 100);
