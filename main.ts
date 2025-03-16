@@ -11,8 +11,17 @@ if (import.meta.main) {
   console.log(derte);
 }
 
-let i = 0;
+// let i = 0;
 
-setInterval(() => {
-  console.log(i++);
-}, 100);
+// setInterval(() => {
+//   console.log(i++);
+// }, 100);
+
+const worker = new Worker(new URL("simple_cli/workers.ts", import.meta.url).href,
+{type: "module"});
+
+worker.postMessage({ n: 43 });
+
+worker.onmessage = (e) => {
+  console.log("Main thread received:", e.data);
+};

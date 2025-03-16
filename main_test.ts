@@ -1,5 +1,5 @@
 import { assertEquals } from "jsr:@std/assert";
-import { multiply } from "./b.ts";
+import { multiply } from "./Welcome/b.ts";
 
 Deno.test(function testMultiply() {
   assertEquals(multiply(2, 2), 4);
