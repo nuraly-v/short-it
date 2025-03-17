@@ -1,9 +1,20 @@
 import { Router } from "./router.ts";
+import { generateShortCode, storeShortLink, getShortLink } from "./db.ts";
 const app = new Router();
 
-app.get('/', () => new Response('Hi Mom!'))
+import { HomePage } from "./ui.tsx";
+import { render } from "npm:preact-render-to-string";
 
-app.post('/health-check', () => new Response("It's ALIVE!"))
+app.get("/", () => {
+  return new Response(
+    render(HomePage({user: null })), 
+    {
+    status: 200,
+    headers: {
+      "content-type": "text/html",
+    },
+  });
+});
 
 export default {
   fetch(req) {
