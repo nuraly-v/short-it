@@ -92,7 +92,7 @@ export function Layout({ children }: { children: ComponentChildren }) {
         <div className="hero min-h-[500px] bg-base-200 rounded-box">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Welcome to <span style="display: inline-block;">Short-It</span></h1>
+              <h1 className="text-5xl font-regular">Welcome to <span style="display: inline-block;">Short-It</span></h1>
               <p className="py-6">
                 Tool for generating shortened links for your needs. Create, manage, and track your links with enterprise-grade tools.
               </p>
